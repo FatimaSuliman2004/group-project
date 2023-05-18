@@ -1,3 +1,4 @@
+/* START HEADER */
 *{
     margin: 0;
     padding: 0;
@@ -42,7 +43,6 @@
     background-color: black;
     padding: 13px;
 }
-
 .summerSale p{
     text-align: center;
     color: white;
@@ -55,17 +55,17 @@
 ul{
     list-style: none;
 }
+ul li :hover{
+    color: var(--maincolor);
+}
  a{
     text-transform:capitalize ;
     text-decoration: none;
     color: black;
 }
-.nav-ul li {
+ nav ul li {
     display: inline-block;
-    padding-right: 32px;
-}
-ul li :hover{
-    color: var(--maincolor);
+    margin-right: 32px;
 }
 nav {
     display: flex;
@@ -77,98 +77,50 @@ nav {
     align-items: center;
      padding: 11px;
 }
+.lookingFor form input{
+    border-radius: 30px;
+    /* background-color: rgba(245, 245, 245, 1); */
+    /* border: none; */
+    padding: 15px 18px;
+    color: #000000;
+}
 .lookIcon {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
 }
-.icon{
+.lookIcon i{
+    padding-left: 10px;
+}
+/* .icon{
     padding-right: 15px;
-}
+} */
 .icon  :hover{
     color: var(--maincolor);
 }
-.user-icon:hover{
-    color: var(--maincolor);
-}
-.user-icon :hover{
-    width: 32px;
-    height: 32px;
-    border-radius: 47%;
-    background-color: var(--mainbakeground);
-    color: white;
-    padding: 7.7px;
-}
-.dropdown-list{
-    display: none;
-}
-.user-icon{
-    position: relative;
-}
-
-.user-icon:hover+.dropdown-list
-{
+/* END HEADER */
+/* START FOOTER */
+.parfan-img{
     display: flex;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(8px);
-    right: -1%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-size: 14px;
-    margin-right: 5%;
-    line-height: 36px;
-    padding: 24px 12px 12px 27px;
-    color: white;
-    border-radius: 4px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5%;
+}
+.left-side{
+    display: flex;
     flex-direction: column;
-    top: 24.6%;
-    z-index: 2;
-    position: absolute;
-    width: 224px;
-    height: 208px;
+    align-items: center;
+   gap: 22px;
 }
-/* end header */
-/* Content */
-.error{
-    text-align: center;
-    margin-top: 8%;
-    margin-bottom: 17%;
+.left-side-under{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-h2{
-    font-weight: lighter;
-    font-size: 110px;
-}
-.error p{
-    font-size: 16px;
-}
-button{
-    background-color: rgb(246, 93, 93);
-    padding: 16px 48px;
-    margin-top: 4.5%;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-   }
-   button a{
-    color: white;
-   }
-
-
-
-
-
-
-
-
-
-/* Content */
-/* Start Footer */
 .footer{
     background-color: #000000;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 1%;
-    border-radius: 4px;
 }
 .links{
     color: #FAFAFA;;
@@ -212,4 +164,108 @@ h5{
     justify-content: space-between;
     font-size: 20px;
 }
-/* End Footer */
+/* END FOOTER */
+
+/*start head*/
+.head{
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.head a{
+    color: #b0b0b0;
+}
+.head a:hover{
+    color: #000000;
+    transition: 0.5ms;
+}
+.head span{
+    color: #DB4444;
+}
+/*End head*/
+
+/*start Section*/
+.section{
+    display: flex;
+    width: 100%;
+     flex-wrap: wrap;
+     padding: 50px;
+     justify-content: space-between;
+}
+.part1{
+    padding: 15px 0 15px 0;
+    width: 20%;
+  }
+
+ .part1 ul li{
+    margin-left: 20px;
+    line-height: 2.5rem;
+}
+
+.part1 ul{
+    margin-bottom: 30px;
+}
+.part1 ul li:hover{
+    color: #DB4444;
+    cursor: pointer;
+}
+ 
+ 
+.part2 {
+     width: 870px;
+    }
+
+   .part2 h4{
+    color: #DB4444;
+   }
+ 
+ .part2 input {
+    width: 280px;
+    padding: 12px 20px;
+    display: block;
+    background-color: #FAFAFA;
+  }
+
+ .mix1,.mix2{
+    display: flex;
+    width: 70%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .mix3{
+    margin-top: 20px;
+  }
+
+ .mix3 input{
+    width: 80%;
+    background-color: #FAFAFA;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+ }
+
+ .btn{
+    background: #DB4444;
+    border-radius: 4px;
+    padding:  12px 30px;
+    color: white;
+    cursor: pointer;
+ }
+ .can{
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+
+ .btns{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+ }
